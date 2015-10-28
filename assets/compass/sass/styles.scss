@@ -17,12 +17,12 @@
 				.navbar {
 					ul {
 						text-align: center;
-					color: black;
 						li {
 							border-left: 1px solid black;
 							margin: 15px 0;
 							a {
 								padding: 0 15px;
+								color: black;
 							}
 						}
 						li:first-child {
@@ -36,14 +36,29 @@
 				.account{
 					margin-bottom:30px;
 				}
+				.navbar {
+					ul {
+						float: right;
+						color: black;
+						li {
+							margin: 15px 0;
+							a {
+								padding: 0 15px;
+								color: black;
+							}
+						}
+					}
+				}
 			}
 		}
 		.body-row {
 			.body-left {
+				h4 {
+					margin-left: 15px;
+				}
 				#video {
 					.video-left {
 						display: inline-block;
-						width: 70%;
 
 						iframe {
 							width:100%;
@@ -51,21 +66,20 @@
 						}
 					}
 					.video-right {
-						width: 25%;
 						float:right;
-						img{
-							display:inline;
-							width: 45%;
-
-						}
-						p{
-							width:54%;
-							display: inline-block;
-							// float:right;
-							font-size: 8px;
-						}
 						.video-preview {
-							margin: 20px 0;
+							margin: 57px 0;
+							img{
+								float:left;
+								display:inline;
+								width: 45%;
+							}
+							p{
+								padding-left: 11px;
+								width:54%;
+								display: inline-block;
+								font-size: 8px;
+							}
 						}
 					}
 				}

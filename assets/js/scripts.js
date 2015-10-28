@@ -95,7 +95,7 @@ var videosBySamePoster = [
 $(document).ready(function() {
 	for(i=0; i<otherVideos.length; i++){
 
-	    private var title = otherVideos[i].title;
+	    var title = otherVideos[i].title;
 	    var thumb = otherVideos[i].thumb;
 	    var url = otherVideos[i].url;
 	    var duration = otherVideos[i].duration;
@@ -113,5 +113,16 @@ $(document).ready(function() {
 		$('.insert-videos').append(html)
 	}
 
+ 	$("#single_1").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
 });
 
+	
