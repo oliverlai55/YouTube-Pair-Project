@@ -93,6 +93,8 @@ var videosBySamePoster = [
 	}
 ];
 $(document).ready(function() {
+	function updateVideos(){
+		$('#insert-videos').html("");
 	for(i=0; i<otherVideos.length; i++){
 
 	    var title = otherVideos[i].title;
@@ -110,8 +112,10 @@ $(document).ready(function() {
 		    html +=		'<div class="duration">'+ postedBy + '</div>';
 		    html +=		'<div class="duration">'+ totalViews + '</div>';
 		    html +=	'</div>';
-		$('.insert-videos').append(html)
+		$('#insert-videos').append(html)
 	}
+}
+
 
  	$("#single_1").fancybox({
     	openEffect	: 'elastic',
@@ -123,6 +127,24 @@ $(document).ready(function() {
     		}
     	}
     });
+
+	$('#add-video-form').submit(function(){
+			var theObject = {
+				title: $('#title').val(),
+				thumb: $('#thumb').val(),
+				url: $('#url').val(),
+				duration: $('#duration').val(),
+				postedBy: $('#posted-by').val(),
+				totalViews: $('#total-views').val()
+			}
+			
+			otherVideos.unshift(theObject); //This will add the new object to the beginning of the array
+			otherVideos.pop(); //Remove the last object so we still have 8
+			updateVideos(); //Call updateVideos 
+			event.preventDefault(); //Keep the form from submitting
+		});
+		updateVideos(); //Call updateVideos on load
 });
+
 
 	

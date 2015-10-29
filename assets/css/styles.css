@@ -56,45 +56,49 @@
   padding: 0 15px;
   color: black;
 }
-/* line 56, ../compass/sass/styles.scss */
+/* line 55, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .body-left {
+  background-color: #f0f0f0;
+}
+/* line 57, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left h4 {
   margin-left: 15px;
 }
-/* line 60, ../compass/sass/styles.scss */
+/* line 62, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-left {
   display: inline-block;
 }
-/* line 63, ../compass/sass/styles.scss */
+/* line 65, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-left iframe {
   width: 100%;
   height: 450px;
 }
-/* line 68, ../compass/sass/styles.scss */
+/* line 70, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-right {
   float: right;
 }
-/* line 70, ../compass/sass/styles.scss */
+/* line 72, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-right .video-preview {
   margin: 57px 0;
 }
-/* line 72, ../compass/sass/styles.scss */
+/* line 74, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-right .video-preview img {
   float: left;
   display: inline;
   width: 45%;
 }
-/* line 77, ../compass/sass/styles.scss */
+/* line 79, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-right .video-preview p {
   padding-left: 11px;
   width: 54%;
   display: inline-block;
   font-size: 8px;
 }
-/* line 87, ../compass/sass/styles.scss */
+/* line 89, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-right {
   margin-top: 40px;
 }
-/* line 89, ../compass/sass/styles.scss */
+/* line 91, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-right img {
   width: 100%;
 }
