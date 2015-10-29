@@ -60,6 +60,10 @@
 .page-wrapper .container .body-row .body-left h4 {
   margin-left: 15px;
 }
+/* line 59, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .body-left #video {
+  overflow: hidden;
+}
 /* line 61, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-left {
   display: inline-block;
@@ -69,17 +73,55 @@
   width: 100%;
   height: 450px;
 }
-/* line 71, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .right-rail.col-sm-4 {
-  margin-top: 40px;
+/* line 70, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .body-left .video-logos {
+  overflow: hidden;
 }
-/* line 75, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info .profile-image {
-  display: inline;
+/* line 72, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .body-left .video-logos .vid-icons {
   width: 40px;
   height: 40px;
 }
+/* line 77, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .body-left .video-comments {
+  margin-top: 25px;
+}
 /* line 80, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info #profile-name {
+.page-wrapper .container .body-row .body-left .new-comments {
+  margin-top: 20px;
+}
+/* line 83, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .body-left .user-comments {
+  margin-top: 20px;
+}
+/* line 87, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 {
+  margin-top: 40px;
+  margin-right: 0;
+}
+/* line 90, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top {
+  padding: 20px;
+  border: 1px solid black;
+}
+/* line 94, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info input {
+  position: absolute;
+  right: 27px;
+  top: 36px;
+}
+/* line 99, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info .profile-image {
+  display: inline;
+  max-width: 100%;
+  height: 60px;
+}
+/* line 104, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info #profile-title {
   display: inline-block;
+}
+/* line 106, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info #profile-title p {
+  margin: 0;
+  font-size: 10px;
 }
