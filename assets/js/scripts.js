@@ -95,7 +95,7 @@ var videosBySamePoster = [
 $(document).ready(function() {
 	function updateVideos(){
 		$('#insert-videos').html("");
-	for(i=0; i<otherVideos.length; i++){
+	for(i=0; i<4; i++){
 
 	    var title = otherVideos[i].title;
 	    var thumb = otherVideos[i].thumb;
@@ -104,7 +104,7 @@ $(document).ready(function() {
 	    var postedBy = otherVideos[i].postedBy;
 	    var totalViews = otherVideos[i].totalViews;
 
-		var html = '<div class="videobox col-sm-3">';
+		var html = '<div class="videobox">';
 		    html +=		'<img src="'+ thumb +'">';
 		    html +=		'<div class="title">'+ title + '</div>';
 		    html +=		'<div class="url">'+ url + '</div>';

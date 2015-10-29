@@ -56,49 +56,30 @@
   padding: 0 15px;
   color: black;
 }
-/* line 55, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-left {
-  background-color: #f0f0f0;
-}
-/* line 57, ../compass/sass/styles.scss */
+/* line 56, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left h4 {
   margin-left: 15px;
 }
-/* line 62, ../compass/sass/styles.scss */
+/* line 61, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-left {
   display: inline-block;
 }
-/* line 65, ../compass/sass/styles.scss */
+/* line 64, ../compass/sass/styles.scss */
 .page-wrapper .container .body-row .body-left #video .video-left iframe {
   width: 100%;
   height: 450px;
 }
-/* line 70, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-left #video .video-right {
-  float: right;
-}
-/* line 72, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-left #video .video-right .video-preview {
-  margin: 57px 0;
-}
-/* line 74, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-left #video .video-right .video-preview img {
-  float: left;
-  display: inline;
-  width: 45%;
-}
-/* line 79, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-left #video .video-right .video-preview p {
-  padding-left: 11px;
-  width: 54%;
-  display: inline-block;
-  font-size: 8px;
-}
-/* line 89, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-right {
+/* line 71, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 {
   margin-top: 40px;
 }
-/* line 91, ../compass/sass/styles.scss */
-.page-wrapper .container .body-row .body-right img {
-  width: 100%;
+/* line 75, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info .profile-image {
+  display: inline;
+  width: 40px;
+  height: 40px;
+}
+/* line 80, ../compass/sass/styles.scss */
+.page-wrapper .container .body-row .right-rail.col-sm-4 .rail-top .profile-info #profile-name {
+  display: inline-block;
 }
