@@ -1,3 +1,4 @@
+var apiKey = "AIzaSyB2_xXL68_ejdpXl5smjhuY3Sx2D888Zn4";
 var otherVideos = [
 	{
 	    title: "The Best of Rachmaninoff",
@@ -94,10 +95,17 @@ var videosBySamePoster = [
 ];
 
 var myApp = angular.module('myApp', []);
-myApp.controller('relatedVideosController', function($scope) {
+myApp.controller('relatedVideosController', function($scope, $http) {
 	
 	$scope.relatedVids = otherVideos;
-
+	$http({
+		method:'GET',
+		url: 'https://www.googleapis.com/youtube/v3/search?relatedToVideoId=player_uid_826512574_1'+apiKey
+	}).then(function successCallback(response) {
+		console.log(response);
+	}, function errorCallback(response) {
+		console.log('error with the api stuff!');
+	});
 });
 
 
