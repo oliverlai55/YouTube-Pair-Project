@@ -98,14 +98,14 @@ var myApp = angular.module('myApp', []);
 myApp.controller('relatedVideosController', function($scope, $http) {
 	
 	$scope.relatedVids = otherVideos;
-	$http({
-		method:'GET',
-		url: 'https://www.googleapis.com/youtube/v3/search?relatedToVideoId=player_uid_826512574_1'+apiKey
-	}).then(function successCallback(response) {
-		console.log(response);
-	}, function errorCallback(response) {
-		console.log('error with the api stuff!');
-	});
+	singleVideoUrl = 'https://www.googleapis.com/youtube/v3/search?relatedToVideoId=0a33WTZK2zI&part=snippet&type=video&maxResults=10&key=AIzaSyB2_xXL68_ejdpXl5smjhuY3Sx2D888Zn4';
+	$http.get(singleVideoUrl).success(function(data) {
+         $scope.relatedVids = data.items;
+         console.log(data.items);
+       });
+	// $http.get({
+	// 	url: 'https://www.googleapis.com/youtube/v3/search?relatedToVideoId=0a33WTZK2zI&part=snippet&type=video&key=AIzaSyB2_xXL68_ejdpXl5smjhuY3Sx2D888Zn4'
+	// });
 });
 
 

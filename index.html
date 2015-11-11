@@ -146,8 +146,8 @@
 						<div ng-repeat="video in relatedVids" id="insert-videos">
 							
 							<div class="videobox">
-								<img src="{{video.thumb}}">
-								<div class="title">{{video.title}}</div>
+								<img src="{{video.snippet.thumbnails.default.url}}">
+								<div class="title">{{video.snippet.title}}</div>
 								<div class="url">{{video.url}}</div>
 								<div class="duration">{{video.duration}}</div>
 								<div class="duration">{{video.postedBy}}</div>
